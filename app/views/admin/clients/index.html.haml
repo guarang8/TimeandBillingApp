@@ -1,0 +1,7 @@
+%h1 Clients
+
+%ul
+  -@clients.each do |c|
+    %li=link_to(c.name, edit_admin_client_path(c))
+%hr
+=link_to("New",new_admin_client_path)

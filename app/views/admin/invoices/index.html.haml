@@ -1,0 +1,7 @@
+%h1 Invoices
+
+%ul
+  -@invoices.each do |c|
+    %li=link_to(c.invoice_number, edit_admin_invoice_path(c))
+%hr
+=link_to("new",new_admin_invoice_path)

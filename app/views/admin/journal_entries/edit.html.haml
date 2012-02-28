@@ -1,0 +1,16 @@
+%h1 
+  = link_to('Journal_entries', admin_journal_entries_path) 
+  >> #{@journal_entry.id}
+%p
+  =semantic_form_for [:admin,@journal_entry] do |f|
+    =f.inputs do
+      =f.input :user_id, :as => :hidden
+      =f.input :entered_at
+      =f.input :project
+      =f.input :description
+      =f.input :hours
+    =f.buttons
+%hr
+  = link_to("New", new_admin_journal_entry_path)
+  %br
+  = link_to 'Destroy', [:admin,@journal_entry], :confirm => 'Are you sure?', :method => :delete

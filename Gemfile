@@ -6,6 +6,15 @@ gem 'rails', '3.1.1'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql'
+gem 'haml'
+gem 'formtastic'
+gem 'will_paginate'
+gem 'devise'
+gem 'delayed_job'
+gem 'delayed_job_active_record'
+gem 'daemons'
+gem 'whenever', :require => false
+gem 'capistrano'
 
 
 # Gems used only for assets and not required
@@ -42,10 +51,17 @@ group :development do
   gem 'launchy'
   gem 'webrat'
   gem 'annotate'
+  gem 'cheat'
+  gem 'bullet'
 end
 
 
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+  gem 'rspec-rails', '2.7.0'
+  gem 'guard-rspec'
+  gem 'test-unit'
+  gem 'therubyracer'
 end
+

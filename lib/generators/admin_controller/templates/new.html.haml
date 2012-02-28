@@ -1,0 +1,7 @@
+%h1 
+  = link_to('<%=plural_name.capitalize%>', admin_<%=plural_name%>_path) 
+  >> New
+%p
+  =semantic_form_for [:admin,@<%=file_name%>] do |f|
+    =f.inputs
+    =f.buttons

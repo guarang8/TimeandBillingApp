@@ -1,0 +1,7 @@
+%h1 Journal_entries
+
+%ul
+  -@journal_entries.each do |c|
+    %li=link_to(c.entered_at, edit_admin_journal_entry_path(c))
+%hr
+=link_to("new",new_admin_journal_entry_path)

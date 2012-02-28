@@ -1,0 +1,42 @@
+#head{
+	padding-top:12px;
+	height:90px;
+	background-color:#454545;
+	border-bottom:2px solid #bfcc85;
+}
+#head a{
+	color:#748f74;
+	font-weight:bold;
+	font-size: 1.6em;
+	text-decoration:none;
+}
+#head h1{
+	font-family:helvetica;
+
+}
+#content{
+	margin-top:24px;
+}
+#menu{
+	position:absolute;
+	top:32px;
+	right:32px;
+}
+#menu a{
+	font-size:1.4em;
+	text-decoration:none;
+	color:#888888;
+}
+#menu ul li{
+  list-style:none;
+	margin-right:12px;
+}
+#menu li{
+  display:inline;
+}
+.accent{
+	font-family:georgia;
+	font-size:1.3em;
+	color:#666;
+	font-style:italic;
+}

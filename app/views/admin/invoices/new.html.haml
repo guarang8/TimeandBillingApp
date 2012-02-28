@@ -1,0 +1,7 @@
+%h1 
+  = link_to('Invoices', admin_invoices_path) 
+  >> New
+%p
+  =semantic_form_for [:admin,@invoice] do |f|
+    =f.inputs
+    =f.buttons

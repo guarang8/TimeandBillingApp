@@ -27,4 +27,30 @@ TimeAndBillingApp::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  #default mailer
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :domain               => 'localhost',
+    :user_name            => 'kumar.anando85@gmail.com',
+    :password             => 'hare$krishna',
+    :authentication       => 'plain',
+    :enable_starttls_auto => true
+  }
+
+  config.after_initialize do
+  Bullet.enable = true
+  Bullet.alert = false
+  Bullet.bullet_logger = true
+  Bullet.console = true
+  #Bullet.growl = true
+  Bullet.rails_logger = true
+  Bullet.disable_browser_cache = true
 end
+end
+

@@ -1,0 +1,7 @@
+%h1 <%=plural_name.capitalize%>
+
+%ul
+  -@<%=plural_name%>.each do |c|
+    %li=link_to(c.name, edit_admin_<%=file_name%>_path(c))
+%hr
+=link_to("new",new_admin_<%=file_name%>_path)

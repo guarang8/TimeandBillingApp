@@ -1,0 +1,11 @@
+%h1 
+  = link_to('Projects', admin_projects_path) 
+  >> #{@project.name}
+%p
+  =semantic_form_for [:admin,@project] do |f|
+    =f.inputs
+    =f.buttons
+%hr
+  = link_to("New", new_admin_project_path)
+  %br
+  = link_to 'Destroy', [:admin,@project], :confirm => 'Are you sure?', :method => :delete

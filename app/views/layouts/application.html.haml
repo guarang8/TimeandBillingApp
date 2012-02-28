@@ -1,0 +1,37 @@
+!!!
+%html
+  %head
+    %title Poi
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tag
+    <!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+  %body
+    #head
+      .container
+        .column
+          %h1=link_to "Poi", "/"
+    #flash
+      - unless notice.blank?
+        .success
+          = notice
+      - unless alert.blank?
+        .alert
+          = alert
+    #menu
+      %ul
+        - if user_signed_in?
+          %li=link_to "Clients",admin_clients_path
+          %li=link_to "Projects", admin_projects_path
+          %li=link_to "Tasks", admin_tasks_path
+          %li=link_to "Invoices",admin_invoices_path
+          %li=link_to "Logout", destroy_user_session_path, :method => :delete
+        - else
+          %li=link_to "Login", new_user_session_path
+    
+    #content
+      .container
+        .column.span-24
+          = yield
+
+    #footer

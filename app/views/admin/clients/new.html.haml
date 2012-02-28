@@ -1,0 +1,7 @@
+%h1 
+  = link_to('Clients', admin_clients_path) 
+  >> New
+%p
+  =semantic_form_for [:admin,@client] do |f|
+    =f.inputs
+    =f.buttons

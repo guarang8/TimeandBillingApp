@@ -1,0 +1,118 @@
+fieldset{
+	border:0px solid #ccc;
+	padding:12px;
+}
+form p{
+	padding:0;
+	margin:0;
+}
+textarea{
+	font-size: 0.9em;
+	font-family:'sans-serif';
+}
+select{
+	font-size: 0.9em;
+	font-family:'sans-serif';
+	border:2px solid #ccc;
+	padding:12px;
+}
+legend{
+	font-family: "colaborate-1","colaborate-2";
+	font-size:1.3em;
+}
+ol{
+	margin:0;
+	padding:8px;
+}
+.inputs input{
+	margin-bottom:12px;
+}
+input[type=text], input[type=password], input[type=email], input[type=url]{
+	font-size: 1.2em;
+	font-family:'sans-serif';
+	border:2px solid #ccc;
+	padding:6px;
+	width:300px;
+
+}
+input[type=submit]:hover{
+  background-color:#dff4ff;
+  border:1px solid #c2e1ef;
+  color:#336699;
+}
+input[type=submit]{
+	margin-top:8px;
+	display:block;
+  padding:5px 10px 5px 7px;   /* Links */
+  
+  border:1px solid #dedede;
+  border-top:1px solid #ccc;
+  border-left:1px solid #ccc;
+
+  background-color:#f5f5f5;
+  font-family:"helvitica neue", Tahoma, Arial, Verdana, sans-serif;
+  font-size:100%;
+  line-height:130%;
+  text-decoration:none;
+  font-weight:bold;
+  color:#565656;
+	cursor:pointer;
+}
+label{
+	color:#557173;
+	font-style:italic;
+}
+#login-form{
+	font-size:0.9em;
+}
+.clean_input{
+	font-size: 1.6em;
+	font-family:'sans-serif';
+	border:2px solid gray;
+	padding:6px;
+}
+
+hr{
+	background-color:#e5e5e5;
+	margin-bottom:12px;
+	margin-top:12px;
+}
+label { 
+	font-weight: bold; 
+	font-size: 0.9em;
+	display:block;
+}
+.inline-error{
+  color:#990000;
+  margin:8px;
+  font-style:italic
+}
+
+
+/* Text fields */
+input.text, input.title   { width: 300px; margin:0.5em 0.5em 0.5em 0; }
+input.text, input.title   { border:1px solid #bbb; background:#f6f6f6; padding:5px; }
+input.text:focus,
+input.title:focus         { border:1px solid #999; background:#fff; }
+input.title               { font-size:1.5em; }
+
+/* Textareas */
+textarea            { width: 400px; height: 150px; margin:0.5em 0.5em 0.5em 0; }
+textarea            { border:1px solid #bbb; background:#eee; padding:5px; }
+textarea:focus      { border:1px solid #999; background:#fff; }
+
+/* Select fields */
+select              { border:1px solid #ccc; background:#f6f6f6 }
+select:focus        { border:1px solid #999; background:#fff; }
+
+
+/* Success, error & notice boxes for messages and errors. */
+.alert,
+.notice, 
+.success    { padding: .6em; border: 4px solid #ddd; }
+.alert      { background: #FBE3E4; color: #D12F19; border-color: #FBC2C4; cursor:pointer;}
+.notice     { background: #FFF6BF; color: #817134; border-color: #FFD324; }
+.success    { background: #E6EFC2; color: #529214; border-color: #C6D880; }
+.alert a    { color: #D12F19; }
+.notice a   { color: #817134; }
+.success a  { color: #529214; }

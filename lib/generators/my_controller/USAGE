@@ -1,0 +1,9 @@
+Description:
+    This a controller generator
+
+Example:
+    It creates a controller with the passed-in arguments as actions
+
+    This will create:
+        app/controllers/name_controller
+        app/views/actions

@@ -1,0 +1,12 @@
+%h1 
+  = link_to('Journal', admin_journal_entries_path) 
+  >> New
+%p
+  =semantic_form_for [:admin,@journal_entry] do |f|
+    =f.inputs do
+      =f.input :user_id, :as => :hidden
+      =f.input :entered_at, :as => :hidden
+      =f.input :project
+      =f.input :hours
+      =f.input :description
+    =f.buttons

@@ -1,0 +1,7 @@
+%h1 
+  = link_to('Tasks', admin_tasks_path) 
+  >> New
+%p
+  =semantic_form_for [:admin,@task] do |f|
+    =f.inputs
+    =f.buttons

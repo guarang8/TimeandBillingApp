@@ -1,0 +1,11 @@
+%h1 
+  = link_to('Invoices', admin_invoices_path) 
+  >> #{@invoice.invoice_number}
+%p
+  =semantic_form_for [:admin,@invoice] do |f|
+    =f.inputs
+    =f.buttons
+%hr
+  = link_to("New", new_admin_invoice_path)
+  %br
+  = link_to 'Destroy', [:admin,@invoice], :confirm => 'Are you sure?', :method => :delete
